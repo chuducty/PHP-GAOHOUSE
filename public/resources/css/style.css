@@ -38,6 +38,10 @@ body {
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
 
+.disabled{
+    pointer-events: none;
+    opacity: 0.5;
+}
 
 .row {
     max-width: 1140px;
@@ -120,7 +124,7 @@ h2:after {
     color: #e67e22;
     font-size: 120%;
     margin-right: 10px;
-    
+
     /*secrets to align text and icons*/
     line-height: 120%;
     vertical-align: middle;
@@ -203,7 +207,19 @@ input[type=submit]:active {
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
+    position: relative;
 }
+
+.section-header-menus{
+     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/home-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/home-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200vh;
+    background-attachment: fixed;
+    position: relative;
+}
+
 
 .section-header-product{
      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/background2.jpg);
@@ -243,7 +259,7 @@ input[type=submit]:active {
     margin-top: 20px;
 }
 
-.logo-black { 
+.logo-black {
     display: none;
     height: 50px;
     width: auto;
@@ -588,10 +604,43 @@ input[type=checkbox] {
 /* Section Menu */
 /* ----------------------------------------------- */
 
+/*
+.box-menu{
+    height: 400px;
+    width: 100%;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/home-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/home-background.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+}
+*/
+
+.section-menu{
+    position: absolute;
+    width: 60%;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 2% 1% 3% 1%;
+    -webkit-box-shadow: -1px -1px 35px -1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -1px -1px 35px -1px rgba(0, 0, 0, 0.5);
+    box-shadow: -1px -1px 35px -1px rgba(0, 0, 0, 0.5);
+}
+
+.section-menu h2{
+    color: #fff;
+}
+
 .menus{
     width: 60%;
     margin: 0 auto 0 auto;
     text-align: center;
+
 }
 
 .menus ul{
@@ -599,24 +648,27 @@ input[type=checkbox] {
 }
 
 .menus ul li{
+    width: 100%;
     clear: both;
     position: relative;
-    border-bottom: dotted 2px #999;
+    border-bottom: dotted 2px rgba(255, 255, 255, 0.3);
     margin: 50px 0 0 0;
-    padding: 0 0 17px 0;
+    padding: 1% 1% 25px 1%;
 }
 
 .menus ul label{
     left: 0;
     position: absolute;
-    background: #fff;
     font-weight: 600;
+    color: #fff;
+    font-size: 90%;
 }
 
 .menus ul p{
     position: absolute;
-    top: 25px;
+    top: 30px;
     left: 0;
+    color: #fff;
     font-style: italic;
     font-size: 80%;
 }
@@ -624,13 +676,16 @@ input[type=checkbox] {
 .menus ul span{
     right: 0;
     position: absolute;
-    background: #fff;
+    color: #fff;
+    font-size: 80%;
 }
+
+
 
 /*
 .dotted{
    border-top:dotted 2px red;
-   position:absolute;   
+   position:absolute;
    top:15px;
    left:0;
    width:100%;
@@ -650,6 +705,7 @@ footer {
     -vendor-animation-duration: 3s;
     -vendor-animation-delay: 2s;
     -vendor-animation-iteration-count: infinite;
+    border-top: 3px solid #fff;
     position: relative;
 }
 
@@ -675,7 +731,7 @@ footer {
 }
 
 .footer-nav li a:link,
-.footer-nav li a:visited, 
+.footer-nav li a:visited,
 .social-links li a:link,
 .social-links li a:visited {
     text-decoration: none;
@@ -734,7 +790,7 @@ footer p {
 
 .btn-box{
     text-align: center;
-    font-size: 300%;
+    font-size: 200%;
 }
 
 
@@ -744,11 +800,17 @@ footer p {
 }
 
 .previous-btn{
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .next-btn{
-    margin-left: 20px;
+    margin-left: 30px;
+}
+.btn-menu{
+  margin-top: 20px;
+}
+.btn-menu a{
+  color: #fff;
 }
 /* ----------------------------------------------- */
 /* Animations */
@@ -778,12 +840,12 @@ footer p {
 
 .arrow-up{
     position: absolute;
-    top: 0;
+    top: 12px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 0;
     height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 50px solid #fff;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #fff;
 }

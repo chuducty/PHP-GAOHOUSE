@@ -48,7 +48,7 @@
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
 
-        <title>Omnifood</title>
+        <title>GaoHouse</title>
 
         <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="/resources/favicons/favicon-32x32.png" sizes="32x32">
@@ -70,7 +70,7 @@
                     <ul class="main-nav js--main-nav">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="about.html">About us</a></li>
-                        <li><a href="Menus.html">Our menus</a></li>
+                        <li><a href="Menus.html">Our menu</a></li>
                         <li><a href="#contact-form">Contact us</a></li>
                         <li><a href="products.php">Our gallery</a></li>
                     </ul>

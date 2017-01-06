@@ -8,8 +8,8 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
 	<h2>Menu</h2>
 	<ul>
 		<li><a href="list_photos.php">View Photos</a></li>
+		<li><a href="list_users.php">Manage admin</a></li>
 		<li><a href="logout.php">Logout</a></li>
 	</ul>
 
 <?php include_layout_template('admin_footer.php'); ?>
-		

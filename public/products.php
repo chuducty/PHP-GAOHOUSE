@@ -45,7 +45,7 @@
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-        <title>Omnifood</title>
+        <title>GaoHouse</title>
 
         <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="/resources/favicons/favicon-32x32.png" sizes="32x32">
@@ -67,9 +67,9 @@
                     <ul class="main-nav js--main-nav">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="about.html">About us</a></li>
-                        <li><a href="Menus.html">Menu</a></li>
+                        <li><a href="Menus.html">Our menu</a></li>
                         <li><a href="#cities">Contact us</a></li>
-                        <li><a href="products.php">Our gallary</a></li>
+                        <li><a href="products.php">Our gallery</a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
@@ -115,16 +115,26 @@
          <!-- img insert done here -->
         <div class="row btn-box">
             <?php
+                if($pagination->has_previous_page()){
+                  echo "<a href=\"products.php?page=";
+                  echo $pagination->previous_page();
+                  echo "\"><i class=\"ion-ios-arrow-left previous-btn\"></i></a>";
+                } else {
+                  echo "<a class=\"disabled\" href=\"products.php?page=";
+                  echo $pagination->previous_page();
+                  echo "\"><i class=\"ion-ios-arrow-left previous-btn\"></i></a>";
+                }
 
-                echo "<a href=\"products.php?page=";
-                echo $pagination->previous_page();
-                echo "\"><i class=\"ion-arrow-left-b previous-btn\"></i></a>";
+                if($pagination->has_next_page()){
+                  echo "<a href=\"products.php?page=";
+                  echo $pagination->next_page();
+                  echo "\"><i class=\"ion-ios-arrow-right next-btn\"></i></a>";
+                } else {
+                  echo "<a class=\"disabled\"  href=\"products.php?page=";
+                  echo $pagination->next_page();
+                  echo "\"><i class=\"ion-ios-arrow-right next-btn\"></i></a>";
+                }
 
-
-
-                echo "<a href=\"products.php?page=";
-                echo $pagination->next_page();
-                echo "\"><i class=\"ion-arrow-right-b next-btn\"></i></a>";
 
 
             // <a href="#"><i class="ion-arrow-left-b previous-btn"></i></a>
@@ -157,7 +167,7 @@
             </div>
             <div class="row">
                 <p>
-                    This webpage is for you! So go and do whatever you want with it and have fun.
+                    This webpage is for Bunny Team!.
                 </p>
                 <p>
                     Build with <i class="ion-ios-heart" style="color: #ea0000; padding: 0 3px;"></i> in the beautiful city of HCMC, Vietnam, December 2016.
