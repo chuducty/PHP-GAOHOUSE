@@ -87,4 +87,13 @@ $(document).ready(function() {
             icon.removeClass('ion-close-round');
         }
     });
+
+    $('.dropdown-menu').hover(
+        function(){
+            $(this).children('.sub-menu').slideDown(200);
+        },
+        function(){
+            $(this).children('.sub-menu').slideUp(200);
+        }
+    );
 });

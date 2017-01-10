@@ -70,6 +70,25 @@
         display: block;
     }
 
+    .sticky .dropdown-menu .sub-menu{
+        position: static;
+        border: 0;
+        background-color: #fff;
+        width: 100px;
+    }
+
+
+
+    .sticky .dropdown-menu .sub-menu li{
+        display: block;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .sticky .dropdown-menu .sub-menu li a{
+        width: 100%;
+    }
+
     .main-nav li a:link,
     .main-nav li a:visited {
         display: block;
@@ -78,8 +97,9 @@
         font-size: 100%;
     }
 
-    .sticky .main-nav { margin-top: 10px; }
 
+
+    .sticky .main-nav { margin-top: 10px; }
     .sticky .main-nav li a:link,
     .sticky .main-nav li a:visited { padding: 10px 0; }
     .sticky .mobile-nav-icon { margin-top: 10px; }
@@ -111,17 +131,57 @@
     .works-step { margin-bottom: 20px; }
     .works-step:last-of-type { margin-bottom: 20px; }
 
-    .menus ul label{
-        font-size: 60%;
+    .section-menu{
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
+        top: 45%;
+        left: 50%;
+        padding: 1% 0 3% 0;
+        border: 2px solid #ccc;
     }
 
-    .menus ul p{
-        font-size: 60%;
+    .section-menu h2{
+        color: #fff;
     }
 
-    .menus ul span{
-        font-size: 60%;
+    .menus{
+        width: 100%;
+        margin: 0 auto 0 auto;
+        color: #fff;
+        text-transform: capitalize;
     }
+
+    .menus h2:after{
+        display: none;
+    }
+
+    .menus h2{
+        text-align: left;
+        font-size: 90%;
+        font-weight: 600;
+    }
+
+    .menus h3{
+        font-size: 70%;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .menus p{
+        font-size: 60%;
+        font-style: italic;
+        width: 80%;
+
+    }
+
+    .span-3-of-5{
+        width: 40%;
+    }
+    .span-1-of-5{
+        width: 30%;
+    }
+
 
 }
 

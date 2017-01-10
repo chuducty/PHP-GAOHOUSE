@@ -68,11 +68,20 @@
                         <img src="resources/img/gao-logo.png" alt="Omnifood logo" class="logo-black">
                     </a>
                     <ul class="main-nav js--main-nav">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="Menus.html">Our menu</a></li>
-                        <li><a href="#contact-form">Contact us</a></li>
-                        <li><a href="products.php">Our gallery</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li class="dropdown-menu">
+                                <a href="Menus.html">Our menus</a>
+                                <ul class="sub-menu">
+                                    <li><a href="Menus.html">Food</a></li>
+                                    <li><a href="#">Iced Tea</a></li>
+                                    <li><a href="#">Tea Bar</a></li>
+                                    <li><a href="#">Juice</a></li>
+                                    <li><a href="#">Soft Drink</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#contact-form">Contact us</a></li>
+                            <li><a href="products.html">Our gallery</a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
@@ -211,7 +220,7 @@
                         <li><a href="#">About us</a></li>
                         <li><a href="#">Menus</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Gallary</a></li>
                     </ul>
                 </div>
                 <div class="col span-1-of-2">
@@ -225,7 +234,7 @@
             </div>
             <div class="row">
                 <p>
-                    This webpage is for you! So go and do whatever you want with it and have fun.
+                  1 Devonshire Rd, Forest Hill, London SE23 3HE
                 </p>
                 <p>
                     Build with <i class="ion-ios-heart" style="color: #ea0000; padding: 0 3px;"></i> in the beautiful city of HCMC, Vietnam, December 2016.
